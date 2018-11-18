@@ -131,6 +131,9 @@ android {
         beta {
             applicationId 'com.appcentertest.beta'
         }
+        production {
+            applicationId 'com.appcentertest'
+        }
     }
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
