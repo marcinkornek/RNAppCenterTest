@@ -22,9 +22,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>
-          {Config.APP_NAME}
-        </Text>
+        <Text>APP_NAME: {Config.APP_NAME}</Text>
+        <Text>RN_APP_NAME: {Config.RN_APP_NAME}</Text>
       </View>
     );
   }
