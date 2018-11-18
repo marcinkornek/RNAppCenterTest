@@ -57,3 +57,6 @@ buck-out/
 
 # pods
 ios/pods
+
+# env file
+.env
