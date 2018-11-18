@@ -101,6 +101,7 @@ android {
         applicationId "com.appcentertest"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        flavorDimensions "default"
         versionCode 1
         versionName "1.0"
         ndk {
@@ -119,6 +120,14 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    productFlavors {
+        dev {
+            applicationId 'com.appcentertest.dev'
+        }
+        beta {
+            applicationId 'com.appcentertest.beta'
         }
     }
     // applicationVariants are e.g. debug, release
