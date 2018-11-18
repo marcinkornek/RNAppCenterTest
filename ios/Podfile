@@ -11,4 +11,6 @@ target 'AppCenterTest' do
   # Pods for AppCenterTest
 
   platform :ios, '9.0'
+  pod 'react-native-config', :path => '../node_modules/react-native-config'
+
 end
