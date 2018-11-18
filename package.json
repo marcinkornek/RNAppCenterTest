@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "react-native-schemes-manager all"
   },
   "dependencies": {
     "react": "16.6.1",
@@ -19,5 +20,14 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "xcodeSchemes": {
+    "Debug": [
+      "Beta.Debug"
+    ],
+    "Release": [
+      "Release.Debug"
+    ],
+    "projectDirectory": "iOS"
   }
 }
