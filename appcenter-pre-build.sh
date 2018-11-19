@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Creates an .env from ENV variables for use with react-native-config
+echo "pre-build"
 ENV_WHITELIST=${ENV_WHITELIST:-"^RN"}
 printf "Creating an .env file with the following whitelist:\n"
 printf "%s\n\n" $ENV_WHITELIST
