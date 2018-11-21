@@ -9,6 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Config from 'react-native-config'
+import Crashes from 'appcenter-crashes';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -19,11 +20,25 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+  generateJsCrash() {
+    throw new Error('This is a test javascript crash!');
+  }
+
+  generateTestCrash() {
+    Crashes.generateTestCrash();
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Text>APP_NAME: {Config.APP_NAME}</Text>
         <Text>RN_APP_NAME: {Config.RN_APP_NAME}</Text>
+        <TouchableOpacity onPress={this.generateJsCrash}>
+          <Text>Click here to generate a JavaScript crash</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={this.generateTestCrash}>
+          <Text>Click here to generate a Test crash</Text>
+        </TouchableOpacity>
       </View>
     );
   }
