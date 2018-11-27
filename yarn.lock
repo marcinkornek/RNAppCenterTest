@@ -675,33 +675,21 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-appcenter-analytics@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/appcenter-analytics/-/appcenter-analytics-1.9.0.tgz#16c2a2a715a8d9316c07a5f357015eeff15af343"
+appcenter-analytics@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/appcenter-analytics/-/appcenter-analytics-1.10.0.tgz#48fd31f2bd3ff8808ee68d7ce43bc8c5e20600a2"
   dependencies:
-    appcenter "1.9.0"
+    appcenter "1.10.0"
 
-appcenter-crashes@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/appcenter-crashes/-/appcenter-crashes-1.9.0.tgz#f1c14125c4a7c882cfd08e1381b6f78a54ea7386"
+appcenter-crashes@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/appcenter-crashes/-/appcenter-crashes-1.10.0.tgz#4feca7e3bf471841b3eb7904d030448c29454be2"
   dependencies:
-    appcenter "1.9.0"
+    appcenter "1.10.0"
 
 appcenter-link-scripts@1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/appcenter-link-scripts/-/appcenter-link-scripts-1.10.0.tgz#4720582afe3fa4a4d927cd570be604882de94d63"
-  dependencies:
-    debug "^2.2.0"
-    glob "^5.0.15"
-    inquirer "1.1.2"
-    mkdirp "^0.5.1"
-    plist "^3.0.1"
-    which "^1.2.11"
-    xcode "^1.0.0"
-
-appcenter-link-scripts@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/appcenter-link-scripts/-/appcenter-link-scripts-1.9.0.tgz#d8603e2943383bf76f585316e696328743284a67"
   dependencies:
     debug "^2.2.0"
     glob "^5.0.15"
@@ -717,17 +705,11 @@ appcenter-push@^1.10.0:
   dependencies:
     appcenter "1.10.0"
 
-appcenter@1.10.0:
+appcenter@1.10.0, appcenter@^1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-1.10.0.tgz#f01daaadd1e2e9df3ca2b8dfda89a15c215d7adc"
   dependencies:
     appcenter-link-scripts "1.10.0"
-
-appcenter@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/appcenter/-/appcenter-1.9.0.tgz#00ee98256bf6167c62e1ed2c35a59b448affb963"
-  dependencies:
-    appcenter-link-scripts "1.9.0"
 
 append-transform@^0.4.0:
   version "0.4.0"
