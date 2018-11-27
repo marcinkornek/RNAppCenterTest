@@ -60,3 +60,6 @@ ios/pods
 
 # env file
 .env
+
+# google-services.json
+android/app/google-services.json
